@@ -2,7 +2,7 @@ from gpiozero import Servo
 from time import sleep
 
 # Define pins for the 12 servos
-servo_pins = [2, 3, 4, 17, 27, 22, 10, 9, 11, 5, 6, 13]
+servo_pins = [23, 25, 4, 17, 27, 22, 10, 9, 11, 5, 6, 13]
 
 # Create a list of 12 servo objects
 servos = [Servo(pin) for pin in servo_pins]
