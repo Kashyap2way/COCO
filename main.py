@@ -11,9 +11,9 @@ try:
     while True:
         for servo in servos:
             servo.min()  # Set each servo to 45 degrees
-            sleep(1)  # Wait for 1 second
+            sleep(0.5)  # Wait for 1 second
             servo.mid()  # Set each servo to 90 degrees
-            sleep(1)  # Wait for 1 second
+            sleep(0.5)  # Wait for 1 second
 
 except KeyboardInterrupt:
     # Clean up when the program is interrupted
