@@ -1,0 +1,11 @@
+import numpy as np
+
+def stand(link1, link2, hypo):
+    cos_theta_b = (link1**2 + hypo**2 - link2**2)/(2*link1*hypo)
+    theta_b = np.arccos(cos_theta_b)
+
+    theta_c = (np.pi-(theta_b*2))
+
+    return theta_b, theta_c
+
+print(stand(0.124,0.135,0.2))
