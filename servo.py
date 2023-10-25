@@ -16,17 +16,6 @@ try:
         # Set all servos to 90 degrees
         for servo in servos:
             servo.value = angle_90
-        sleep(1)  # Pause for 1 second
-
-        # Set all servos to 45 degrees
-        for servo in servos:
-            servo.value = angle_45
-        sleep(1)  # Pause for 1 second
-
-        # Set all servos back to 90 degrees
-        for servo in servos:
-            servo.value = angle_90
-        sleep(1)  # Pause for 1 second
 
 except KeyboardInterrupt:
     # Clean up when the program is terminated
