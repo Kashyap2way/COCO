@@ -25,12 +25,25 @@ FLE_servo = Servo(FLE_pin)
 BRE_servo = Servo(BRE_pin)
 BLE_servo = Servo(BLE_pin)
 
-FRS_servo.value = val(90)
-FLS_servo.value = val(90)
-BRS_servo.value = val(90)
-BLS_servo.value = val(90)
+FRS_servo.mid()
+FLS_servo.mid()
+BRS_servo.mid()
+BLS_servo.mid()
 
-FRE_servo.value = val(45)
-FLE_servo.value = val(45)
-BRE_servo.value = val(45)
-BLE_servo.value = val(45)
+FRE_servo.mid()
+FLE_servo.mid()
+BRE_servo.mid()
+BLE_servo.mid()
+
+sleep(2)
+
+FRS_servo.max()
+FLS_servo.max()
+BRS_servo.max()
+BLS_servo.max()
+
+FRE_servo.max()
+FLE_servo.max()
+BRE_servo.max()
+BLE_servo.max()
+
