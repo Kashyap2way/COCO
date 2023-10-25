@@ -4,19 +4,31 @@ from time import sleep
 # Define pins for the 12 servos
 servo_pins = [23, 25, 4, 17, 27, 22, 10, 9, 11, 5, 6, 13]
 
-# Create a list of 12 servo objects
+# Create servo objects for each pin
 servos = [Servo(pin) for pin in servo_pins]
 
-# Set all servos to 90 degrees
-for servo in servos:
-    servo.mid()
+# Define the angles
+angle_90 = 0
+angle_45 = -0.5  # Adjust this value if needed
 
 try:
     while True:
-        # Your code can go here, or you can leave the loop empty to keep the servos at 90 degrees.
-        sleep(1)  # Sleep to reduce CPU usage
+        # Set all servos to 90 degrees
+        for servo in servos:
+            servo.value = angle_90
+        sleep(1)  # Pause for 1 second
+
+        # Set all servos to 45 degrees
+        for servo in servos:
+            servo.value = angle_45
+        sleep(1)  # Pause for 1 second
+
+        # Set all servos back to 90 degrees
+        for servo in servos:
+            servo.value = angle_90
+        sleep(1)  # Pause for 1 second
 
 except KeyboardInterrupt:
-    # Clean up when the program is interrupted
+    # Clean up when the program is terminated
     for servo in servos:
-        servo.detach()
+        servo.close()
