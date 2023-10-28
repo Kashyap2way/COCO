@@ -15,7 +15,7 @@ def stand(hypo):
     pwm_b = (theta_b - 90)/90
     pwm_c = (theta_c - 90)/90
 
-    return theta_b, theta_c, pwm_b, pwm_c
+    return pwm_b, pwm_c
 
 # Define pins for the 12 servos
 #servo_pins = [23, 25, 4, 17, 27, 22, 10, 9, 11, 5, 6, 13
@@ -51,7 +51,25 @@ try:
     while True:
         # Set all servos to 90 degrees
         
-        FRS_pin.value, FRE_pin.value = 
+        FRS_pin.value, FRE_pin.value = stand(200)
+        sleep(0.5)
+        FRS_pin.value, FRE_pin.value = stand(150)
+        sleep(0.5)
+
+        BLS_pin.value, BLE_pin.value = stand(200)
+        sleep(0.5)
+        BLS_pin.value, BLE_pin.value = stand(150)
+        sleep(0.5)
+
+        FLS_pin.value, FLE_pin.value = stand(200)
+        sleep(0.5)
+        FLS_pin.value, FLE_pin.value = stand(150)
+        sleep(0.5)
+
+        BRS_pin.value, BRE_pin.value = stand(200)
+        sleep(0.5)
+        BRS_pin.value, BRE_pin.value = stand(150)
+        sleep(0.5)
 
 except KeyboardInterrupt:
     # Clean up when the program is terminated
