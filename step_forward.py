@@ -1,4 +1,4 @@
-from gpiozero import AngularServo
+from gpiozero import Servo
 from time import sleep
 import Inverse_Kinematics as ik
 
@@ -14,14 +14,14 @@ BLE_pin = 17
 
 
 # Define your servo objects
-servo1 = AngularServo(FRS_pin)
-servo2 = AngularServo(FLS_pin)
-servo3 = AngularServo(BRS_pin)
-servo4 = AngularServo(BLS_pin)
-servo5 = AngularServo(FRE_pin)
-servo6 = AngularServo(FLE_pin)
-servo7 = AngularServo(BRE_pin)
-servo8 = AngularServo(BLE_pin)
+servo1 = Servo(FRS_pin)
+servo2 = Servo(FLS_pin)
+servo3 = Servo(BRS_pin)
+servo4 = Servo(BLS_pin)
+servo5 = Servo(FRE_pin)
+servo6 = Servo(FLE_pin)
+servo7 = Servo(BRE_pin)
+servo8 = Servo(BLE_pin)
 
 def step():
     a1, a2 = ik.IK(0.122, 0.13, 0, 0.1)
