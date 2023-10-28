@@ -42,15 +42,15 @@ try:
         
         FRS_servo.value, FRE_servo.value = stand(200)
         sleep(0.5)
-        FRS_pin.value, FRE_pin.value = stand(150)
+        FRS_servo.value, FRE_servo.value = stand(150)
         sleep(0.5)
 
-        BLS_pin.value, BLE_pin.value = stand(200)
+        BLS_servo.value, BLE_servo.value = stand(200)
         sleep(0.5)
-        BLS_pin.value, BLE_pin.value = stand(150)
+        BLS_servo.value, BLE_servo.value = stand(150)
         sleep(0.5)
 
-        FLS_pin.value, FLE_pin.value = stand(200)
+        FLS_servo.value, FLE_servo.value = stand(200)
         sleep(0.5)
         FLS_pin.value, FLE_pin.value = stand(150)
         sleep(0.5)
