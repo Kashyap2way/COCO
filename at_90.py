@@ -1,8 +1,8 @@
 from gpiozero import Servo
 from time import sleep
 
-def val(angle):
-    v = (angle - 90)/90
+def val(value):
+    v = (value - 90)/90
     return v
 
 FRS_pin = 9
@@ -29,11 +29,11 @@ BLE_servo = Servo(BLE_pin)
 
 FRH_servo = Servo(FRH_pin)
 
-FRS_servo.angle = 0
-FRH_servo.angle = 0
+FRS_servo.value = 0
+FRH_servo.value = 0
 sleep(0.5)
-FRS_servo.angle = 90
-FRH_servo.angle = 90
+FRS_servo.value = 90
+FRH_servo.value = 90
 sleep(0.5)
-FRS_servo.angle = None
-FRH_servo.angle = None
+FRS_servo.value = None
+FRH_servo.value = None
