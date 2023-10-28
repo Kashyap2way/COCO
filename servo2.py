@@ -20,6 +20,26 @@ def stand(hypo):
 # Define pins for the 12 servos
 servo_pins = [23, 25, 4, 17, 27, 22, 10, 9, 11, 5, 6, 13]
 
+FRS_pin = [9, 4, 27, 11, 6, 25,
+FLS_pin = 4
+BRS_pin = 27
+BLS_pin = 11
+
+FRE_pin = 6
+FLE_pin = 25
+BRE_pin = 13
+BLE_pin = 17
+
+
+GPIO.setup(FRS_pin, GPIO.OUT)
+GPIO.setup(FLS_pin, GPIO.OUT)
+GPIO.setup(BRS_pin, GPIO.OUT)
+GPIO.setup(BLS_pin, GPIO.OUT)
+GPIO.setup(FRE_pin, GPIO.OUT)
+GPIO.setup(FLE_pin, GPIO.OUT)
+GPIO.setup(BRE_pin, GPIO.OUT)
+GPIO.setup(BLE_pin, GPIO.OUT)
+
 # Create servo objects for each pin
 servos = [Servo(pin) for pin in servo_pins]
 
