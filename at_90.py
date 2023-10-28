@@ -29,11 +29,12 @@ BLE_servo = Servo(BLE_pin)
 
 FRH_servo = Servo(FRH_pin)
 
-FRS_servo.value = 0
-FRH_servo.value = 0
-sleep(0.5)
-FRS_servo.value = 90
-FRH_servo.value = 90
-sleep(0.5)
-FRS_servo.value = None
-FRH_servo.value = None
+while True:
+    FRS_servo.value = 0
+    FRH_servo.value = 0
+    sleep(0.5)
+    FRS_servo.value = 90
+    FRH_servo.value = 90
+    sleep(0.5)
+    FRS_servo.value = None
+    FRH_servo.value = None
