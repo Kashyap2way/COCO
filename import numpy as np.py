@@ -1,7 +1,8 @@
 from math import *
 
-def stand(link1, link2, hypo):
-    cos_theta_b = (link1**2 + hypo**2 - link2**2)/(2*link1*hypo)
+def stand(hypo):
+    hypo = hypo/1000
+    cos_theta_b = (0.122**2 + hypo**2 - 0.130**2)/(2*0.122*hypo)
 
     theta_b = int(degrees(acos(cos_theta_b)))
     theta_c = (180-(theta_b*2))
