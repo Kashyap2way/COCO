@@ -15,6 +15,8 @@ FLE_pin = 25
 BRE_pin = 13
 BLE_pin = 17
 
+FRH_pin = 5
+
 FRS_servo = Servo(FRS_pin)
 FLS_servo = Servo(FLS_pin)
 BRS_servo = Servo(BRS_pin)
@@ -25,25 +27,13 @@ FLE_servo = Servo(FLE_pin)
 BRE_servo = Servo(BRE_pin)
 BLE_servo = Servo(BLE_pin)
 
-FRS_servo.mid()
-FLS_servo.mid()
-BRS_servo.mid()
-BLS_servo.mid()
+FRH_servo = Servo(FRH_pin)
 
-FRE_servo.mid()
-FLE_servo.mid()
-BRE_servo.mid()
-BLE_servo.mid()
-
-sleep(2)
-
-FRS_servo.max()
-FLS_servo.max()
-BRS_servo.max()
-BLS_servo.max()
-
-FRE_servo.max()
-FLE_servo.max()
-BRE_servo.max()
-BLE_servo.max()
-
+FRS_servo.angle = 0
+FRH_servo.angle = 0
+sleep(0.5)
+FRS_servo.angle = 90
+FRH_servo.angle = 90
+sleep(0.5)
+FRS_servo.angle = None
+FRH_servo.angle = None
