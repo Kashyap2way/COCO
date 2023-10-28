@@ -20,25 +20,14 @@ def stand(hypo):
 # Define pins for the 12 servos
 #servo_pins = [23, 25, 4, 17, 27, 22, 10, 9, 11, 5, 6, 13
 
-FRS_pin = 9
-FLS_pin = 4
-BRS_pin = 27
-BLS_pin = 11
-
-FRE_pin = 6
-FLE_pin = 25
-BRE_pin = 13
-BLE_pin = 17
-
-
-GPIO.setup(FRS_pin, GPIO.OUT)
-GPIO.setup(FLS_pin, GPIO.OUT)
-GPIO.setup(BRS_pin, GPIO.OUT)
-GPIO.setup(BLS_pin, GPIO.OUT)
-GPIO.setup(FRE_pin, GPIO.OUT)
-GPIO.setup(FLE_pin, GPIO.OUT)
-GPIO.setup(BRE_pin, GPIO.OUT)
-GPIO.setup(BLE_pin, GPIO.OUT)
+FRS_servo = Servo(9)
+FLS_servo = Servo(4)
+BRS_servo = Servo(27)
+BLS_servo = Servo(11)
+FRE_servo = Servo(6)
+FLE_servo = Servo(25)
+BRE_servo = Servo(13)
+BLE_servo = Servo(17)
 
 # Create servo objects for each pin
 #servos = [Servo(pin) for pin in servo_pins]
@@ -51,7 +40,7 @@ try:
     while True:
         # Set all servos to 90 degrees
         
-        FRS_pin.value, FRE_pin.value = stand(200)
+        FRS_servo.value, FRE_servo.value = stand(200)
         sleep(0.5)
         FRS_pin.value, FRE_pin.value = stand(150)
         sleep(0.5)
