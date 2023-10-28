@@ -52,12 +52,12 @@ try:
 
         FLS_servo.value, FLE_servo.value = stand(200)
         sleep(0.5)
-        FLS_pin.value, FLE_pin.value = stand(150)
+        FLS_servo.value, FLE_servo.value = stand(150)
         sleep(0.5)
 
-        BRS_pin.value, BRE_pin.value = stand(200)
+        BRS_servo.value, BRE_servo.value = stand(200)
         sleep(0.5)
-        BRS_pin.value, BRE_pin.value = stand(150)
+        BRS_servo.value, BRE_servo.value = stand(150)
         sleep(0.5)
 
 except KeyboardInterrupt:
