@@ -76,7 +76,7 @@ def step_leg2():
 # You can call the 'step_leg1' and 'step_leg2' functions to perform movements for the two legs.
 
 
-while True:
+while (True):
     step_leg1()
     sleep(0.5)
     servo1.angle = 90
