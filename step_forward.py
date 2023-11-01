@@ -86,4 +86,5 @@ while True:
     step_leg2()
     sleep(0.5)
     servo3.value = 90
-    servo7.value = 90   
+    servo7.value = 90
+    sleep(0.5)
