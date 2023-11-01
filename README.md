@@ -18,7 +18,6 @@ Our 4-legged robot project aims to demonstrate the capabilities of such robots a
 
 [![Demo Video]([https://your-video-link.com](https://github.com/Kashyap2way/COCO/blob/main/Assets/)Prototype_video)
 
-[Watch the robot in action! Click on the image above to view the full demo video on YouTube.]
 
 ## Getting Started
 
@@ -27,4 +26,4 @@ To get started with your own 4-legged robot, follow these steps:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+[https://github.com/Kashyap2way/COCO.git)https://github.com/Kashyap2way/COCO.git]
