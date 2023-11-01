@@ -16,7 +16,7 @@ Our 4-legged robot project aims to demonstrate the capabilities of such robots a
 
 ## Demo Video
 
-[![Demo Video]([https://your-video-link.com](https://github.com/Kashyap2way/COCO/blob/main/Assets/)Prototype_video)
+[![Demo Video]([https://your-video-link.com](https://github.com/Kashyap2way/COCO/blob/main/Assets/)Prototype_video.gif)
 
 
 ## Getting Started
