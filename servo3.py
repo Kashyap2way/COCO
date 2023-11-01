@@ -42,7 +42,7 @@ while True:
     # Set all servos to 90 degrees
     
     FRS_servo_value, FRE_servo_value = stand(150)
-    FRS_servo.value = conversion(FRS_servo_value + 20)
+    FRS_servo.value = conversion(FRS_servo_value)
     FRE_servo.value = conversion(FRE_servo_value)
     sleep(0.5)
 
