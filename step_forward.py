@@ -77,6 +77,7 @@ while True:
     servo1.angle = 90
     servo5.angle = 90
     sleep(1)
-    step_leg2
-    servo3.angle = 90
-    servo7.angle = 90    
+    step_leg2()  # Corrected the function call
+    servo3.angle = 90  # Corrected the angle setting
+    servo7.angle = 90  # Corrected the angle setting
+    sleep(1)  
