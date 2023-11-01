@@ -28,6 +28,7 @@ servo8 = Servo(BLE_pin)
 
 def step_leg1():
     a1, a2 = ik.IK(0.122, 0.13, 0, 0.1)
+    a2 -= 90
     
     # Set the servo angles for the first leg
     servo1.angle = 45
