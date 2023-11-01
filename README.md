@@ -26,5 +26,5 @@ To get started with your own 4-legged robot, follow these steps:
 1. Clone this repository:
 
    ```bash
-      [https://github.com/Kashyap2way/COCO.git)https://github.com/Kashyap2way/COCO.git]
+      https://github.com/Kashyap2way/COCO.git)https://github.com/Kashyap2way/COCO.git
 
