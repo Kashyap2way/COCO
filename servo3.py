@@ -16,7 +16,7 @@ def stand(hypo):
 
 def conversion(angle):
     pwm = (angle - 90)/90
-    return pwn
+    return pwm
 
 # Define pins for the 12 servos
 #servo_pins = [23, 25, 4, 17, 27, 22, 10, 9, 11, 5, 6, 13
