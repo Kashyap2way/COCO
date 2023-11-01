@@ -24,7 +24,7 @@ def flipped_stand(hypo):
     theta_b -= 52
     theta_c += 14
 
-    return theta_b, theta_c
+    return theta_E, theta_D
 
 def conversion(angle):
     pwm = (angle - 90)/90
