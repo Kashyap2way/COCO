@@ -3,6 +3,7 @@ from time import sleep
 
 import numpy as np
 
+
 #Link1: Length of link 1
 #Link2: Length of link 2
 #x_axis_dist: distance to be moved in X axis
@@ -17,7 +18,7 @@ def IK(LinkL1, LinkL2, x_axis_dist, y_axis_dist):
     theta1 = theta1 * (180/np.pi)
     theta2 = theta2 * (180/np.pi)
 
-    return theta1, theta2
+    return (theta1-90)/90, (theta2-90)/90
 
 # Pins for the first leg
 FRS_pin = 9
@@ -47,14 +48,14 @@ def step_leg1():
     a1, a2 = IK(0.122, 0.13, 0, 0.1)
     
     # Set the servo angles for the first leg
-    servo1.angle = 45
-    servo5.angle = 120
+    servo1.value = -0.5
+    servo5.value = 0.33
     sleep(0.5)
     
     
     # Set the angles back to the calculated values for the first leg
-    servo1.angle = a1
-    servo5.angle = a2
+    servo1.value = a1
+    servo5.value = a2
     sleep(0.5)
     
 
@@ -63,13 +64,13 @@ def step_leg2():
     a1, a2 = IK(0.122, 0.13, 0, 0.1)  # Adjust the parameters as needed
     
     # Set the servo angles for the second leg
-    servo3.angle = 45
-    servo7.angle = 120
+    servo3.value = -0.5
+    servo7.value = 0.33
     sleep(0.5)
     
     # Set the angles back to the calculated values for the second leg
-    servo3.angle = a1
-    servo7.angle = a2
+    servo3.value = a1
+    servo7.value = a2
     sleep(0.5)
     
     # Stop the servos for the second leg
@@ -79,10 +80,10 @@ def step_leg2():
 while True:
     step_leg1()
     sleep(0.5)
-    servo1.angle = 34
-    servo5.angle = 65
+    servo1.value = 90
+    servo5.value = 90
     sleep(1)
-    step_leg2
+    step_leg2()
     sleep(0.5)
-    servo3.angle = 42
-    servo7.angle = 65  
+    servo3.value = 90
+    servo7.value = 90    
