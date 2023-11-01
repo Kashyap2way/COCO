@@ -76,19 +76,14 @@ def step_leg2():
     # Stop the servos for the second leg
 # You can call the 'step_leg1' and 'step_leg2' functions to perform movements for the two legs.
 
-try:
-    while True:
-        step_leg1()
-        sleep(0.5)
-        servo1.value = 90
-        servo5.value = 90
-        sleep(1)
-        step_leg2()
-        sleep(0.5)
-        servo3.value = 90
-        servo7.value = 90   
 
-except KeyboardInterrupt:
-    # Clean up when the program is terminated
-    for servo in servos:
-        servo.close()
+while True:
+    step_leg1()
+    sleep(0.5)
+    servo1.value = 90
+    servo5.value = 90
+    sleep(1)
+    step_leg2()
+    sleep(0.5)
+    servo3.value = 90
+    servo7.value = 90   
