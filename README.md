@@ -1,13 +1,9 @@
 # COCO - Self Balancing Robot
-In the field of robotics, a captivating development has emerged, exemplified by the self-balancing canine robot, powered by a Raspberry Pi microcomputer. This robotic companion seamlessly amalgamates computational intelligence with the endearing characteristics associated with a domesticated dog. Leveraging the computational capabilities of the Raspberry Pi, it exhibits the ability to comprehend verbal instructions, navigate its surroundings, and react to external stimuli. Effectively, this innovation provides users with a technologically astute companion, akin to a four-legged canine, poised to acquire knowledge and engage in interactive activities at any given moment.
-
-# 4-Legged Robot with 12 MG995 Servo Motors
-
 Welcome to the GitHub repository for our 4-legged robot project! This repository contains the source code, schematics, and documentation for building and controlling a quadruped robot powered by 12 MG995 servo motors.
 
-## Introduction
+In the field of robotics, a captivating development has emerged, exemplified by the self-balancing canine robot, powered by a Raspberry Pi microcomputer. This robotic companion seamlessly amalgamates computational intelligence with the endearing characteristics associated with a domesticated dog. Leveraging the computational capabilities of the Raspberry Pi, it exhibits the ability to comprehend verbal instructions, navigate its surroundings, and react to external stimuli. Effectively, this innovation provides users with a technologically astute companion, akin to a four-legged canine, poised to acquire knowledge and engage in interactive activities at any given moment.
 
-A 4-legged robot, also known as a quadruped robot, is a type of mechanical robot that emulates the walking capabilities of animals with four legs. These robots are designed to navigate various terrains and perform a wide range of tasks, making them ideal for applications like search and rescue, exploration, and surveillance.
+Welcome to the GitHub repository for our 4-legged robot project! This repository contains the source code, schematics, and documentation for building and controlling a quadruped robot powered by 12 MG995 servo motors.
 
 ## 3D Model
 ![img.src](https://github.com/Kashyap2way/COCO/blob/main/Assets/Cover.png)
