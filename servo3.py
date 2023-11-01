@@ -12,10 +12,11 @@ def stand(hypo):
     theta_b += 52
     theta_c -= 14
 
-    pwm_b = (theta_b - 90)/90
-    pwm_c = (theta_c - 90)/90
+    return theta_b, theta_c
 
-    return pwm_b, pwm_c
+def conversion(angle):
+    pwm = (angle - 90)/90
+    return pwn
 
 # Define pins for the 12 servos
 #servo_pins = [23, 25, 4, 17, 27, 22, 10, 9, 11, 5, 6, 13
@@ -40,27 +41,14 @@ try:
     while True:
         # Set all servos to 90 degrees
         
-        FRS_servo.value, FRE_servo.value = stand(200)
-        sleep(0.5)
-        FRS_servo.value, FRE_servo.value = stand(150)
-        sleep(0.5)
-
-        BLS_servo.value, BLE_servo.value = stand(200)
-        sleep(0.5)
-        BLS_servo.value, BLE_servo.value = stand(150)
+        FRS_servo_value, FRE_servo_value = stand(150)
+        FRS_servo.value = conversion(FRS_servo_value + 20)
+        FRE_servo.value = conversion(FRE_servo_value)
         sleep(0.5)
 
-        FLS_servo.value, FLE_servo.value = stand(200)
-        sleep(0.5)
-        FLS_servo.value, FLE_servo.value = stand(150)
-        sleep(0.5)
-
-        BRS_servo.value, BRE_servo.value = stand(200)
-        sleep(0.5)
-        BRS_servo.value, BRE_servo.value = stand(150)
+        FRS_servo_value, FRE_servo_value = stand(200)
+        FRS_servo.value = conversion(FRS_servo_value + 20)
+        FRE_servo.value = conversion(FRE_servo_value)
         sleep(0.5)
 
-except KeyboardInterrupt:
-    # Clean up when the program is terminated
-    for servo in servos:
-        servo.close()
+        FRS_servo.value = 
