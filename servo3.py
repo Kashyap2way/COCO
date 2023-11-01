@@ -37,18 +37,18 @@ BLE_servo = Servo(17)
 #angle_90 = 0
 #angle_45 = -0.5  # Adjust this value if needed
 
-try:
-    while True:
-        # Set all servos to 90 degrees
-        
-        FRS_servo_value, FRE_servo_value = stand(150)
-        FRS_servo.value = conversion(FRS_servo_value + 20)
-        FRE_servo.value = conversion(FRE_servo_value)
-        sleep(0.5)
 
-        FRS_servo_value, FRE_servo_value = stand(200)
-        FRS_servo.value = conversion(FRS_servo_value + 20)
-        FRE_servo.value = conversion(FRE_servo_value)
-        sleep(0.5)
+while True:
+    # Set all servos to 90 degrees
+    
+    FRS_servo_value, FRE_servo_value = stand(150)
+    FRS_servo.value = conversion(FRS_servo_value + 20)
+    FRE_servo.value = conversion(FRE_servo_value)
+    sleep(0.5)
+
+    FRS_servo_value, FRE_servo_value = stand(200)
+    FRS_servo.value = conversion(FRS_servo_value + 20)
+    FRE_servo.value = conversion(FRE_servo_value)
+    sleep(0.5)
 
 
