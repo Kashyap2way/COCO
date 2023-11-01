@@ -1,5 +1,36 @@
 # COCO - Self Balancing Robot
 In the field of robotics, a captivating development has emerged, exemplified by the self-balancing canine robot, powered by a Raspberry Pi microcomputer. This robotic companion seamlessly amalgamates computational intelligence with the endearing characteristics associated with a domesticated dog. Leveraging the computational capabilities of the Raspberry Pi, it exhibits the ability to comprehend verbal instructions, navigate its surroundings, and react to external stimuli. Effectively, this innovation provides users with a technologically astute companion, akin to a four-legged canine, poised to acquire knowledge and engage in interactive activities at any given moment.
 
+# 4-Legged Robot with 12 MG995 Servo Motors
+
+Welcome to the GitHub repository for our 4-legged robot project! This repository contains the source code, schematics, and documentation for building and controlling a quadruped robot powered by 12 MG995 servo motors.
+
+## Introduction
+
+A 4-legged robot, also known as a quadruped robot, is a type of mechanical robot that emulates the walking capabilities of animals with four legs. These robots are designed to navigate various terrains and perform a wide range of tasks, making them ideal for applications like search and rescue, exploration, and surveillance.
+
 ## 3D Model
 ![img.src](https://github.com/Kashyap2way/COCO/blob/main/Assets/Cover.png)
+
+Our 4-legged robot project aims to demonstrate the capabilities of such robots and provide a platform for enthusiasts, researchers, and hobbyists to experiment with legged locomotion. Whether you're interested in robotics, engineering, or programming, this project offers an exciting opportunity to delve into the world of robotics and automation.
+
+## Features
+
+- **12 MG995 Servo Motors**: Our robot is equipped with 12 high-torque MG995 servo motors, providing precise control and motion range.
+- **Adaptive Locomotion**: The robot can adapt to different terrains, making it versatile for various applications.
+- **Open-Source**: This project is open-source, encouraging collaboration and improvements from the community.
+
+## Demo Video
+
+[![Demo Video](https://your-image-url.com/demo-thumbnail.png)](https://your-video-link.com)
+
+[Watch the robot in action! Click on the image above to view the full demo video on YouTube.]
+
+## Getting Started
+
+To get started with your own 4-legged robot, follow these steps:
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
