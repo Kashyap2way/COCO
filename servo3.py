@@ -51,4 +51,4 @@ try:
         FRE_servo.value = conversion(FRE_servo_value)
         sleep(0.5)
 
-        FRS_servo.value = 
+
