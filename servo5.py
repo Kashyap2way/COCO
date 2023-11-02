@@ -57,7 +57,7 @@ while True:
     BRE_servo.value = conversion(BRE_servo_value)
     BRH_servo.value = conversion(90)
 
-    sleep(0.5)
+    sleep(1)
 
 #2nd part
 
@@ -70,7 +70,7 @@ while True:
     BRS_servo.value = conversion(BRS_servo_value)
     BRE_servo.value = conversion(BRE_servo_value)
     BRE_servo.value = conversion(90)
-    sleep(0.5)
+    sleep(1)
 
 #3rd part
 
@@ -81,4 +81,4 @@ while True:
     BRS_servo_value, BRE_servo_value = stand(200)
     BRS_servo.value = conversion(BRS_servo_value + 20)
     BRE_servo.value = conversion(BRE_servo_value)
-    sleep(0.5)
+    sleep(1)
