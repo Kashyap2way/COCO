@@ -55,8 +55,6 @@ def calculate_pid_output(error, last_error, integral, kp, ki, kd):
 def within_margin(error):
     return abs(error) > 2
 
-# ... (previous code remains unchanged)
-
 # Robot leg distance from the ground
 leg_distance_from_ground = 170  # mm
 
