@@ -55,6 +55,11 @@ def calculate_pid_output(error, last_error, integral, kp, ki, kd):
 def within_margin(error):
     return abs(error) > 2
 
+# ... (previous code remains unchanged)
+
+# Robot leg distance from the ground
+leg_distance_from_ground = 170  # mm
+
 try:
     while True:
         # Read raw accelerometer data
@@ -87,10 +92,16 @@ try:
         back_leg_adjustment = -output_y * (front_back_leg_distance / 2)
         side_leg_adjustment = output_x * (side_leg_distance / 2)
 
-        # Apply adjustments to leg lengths (adjust as per your robot's mechanism)
+        # Calculate adjustments for leg heights from the ground
+        front_leg_height_adjustment = output_y * (leg_distance_from_ground / 2)
+        back_leg_height_adjustment = -output_y * (leg_distance_from_ground / 2)
+        side_leg_height_adjustment = output_x * (leg_distance_from_ground / 2)
+
+        # Apply adjustments to leg lengths and heights from the ground
         # Implement logic to control the robot's legs based on adjustments calculated
 
         time.sleep(0.1)  # Adjust sleep time as needed
 
 except KeyboardInterrupt:
     pass
+
