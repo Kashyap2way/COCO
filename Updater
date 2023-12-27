@@ -1,0 +1,40 @@
+import RPi.GPIO as GPIO
+import subprocess
+import time
+
+# Set the GPIO mode
+GPIO.setmode(GPIO.BCM)
+
+# Define the GPIO pin for the button
+button_pin = 16
+
+# Configure the button pin as input with pull-up resistor
+GPIO.setup(button_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+# Function to execute the bootSequence.sh script
+def execute_boot_sequence():
+    subprocess.call(['/bin/bash', '/home/pi/bootSequence.sh'])
+
+# Function to initiate shutdown
+def shutdown_raspberry_pi():
+    subprocess.call(['sudo', 'shutdown', '-h', 'now'])
+
+try:
+    while True:
+        GPIO.wait_for_edge(button_pin, GPIO.FALLING)
+        start_time = time.time()
+
+        while GPIO.input(button_pin) == GPIO.LOW:
+            time.sleep(0.01)  # Polling delay
+            if (time.time() - start_time) > 3:  # Check if button held for more than 3 seconds
+                shutdown_raspberry_pi()
+                break
+
+        if (time.time() - start_time) <= 3:  # Check if button pressed for less than 3 seconds
+            execute_boot_sequence()
+
+except KeyboardInterrupt:
+    pass
+
+finally:
+    GPIO.cleanup()  # Clean up GPIO on exit
